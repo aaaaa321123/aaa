@@ -4,15 +4,15 @@
   <title>Install My Extension</title>
 </head>
 <body>
-  <h2>Install My Chrome Extension</h2>
-  <button onclick="installExtension()">Install Now</button>
+  <h1>Install My Chrome Extension</h1>
+  <button onclick="installExtension()">Install Extension</button>
 
   <script>
     function installExtension() {
       chrome.webstore.install(
-        'https://chrome.google.com/webstore/detail/YOUR_EXTENSION_ID',
+        'https://chrome.google.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm',
         function() {
-          alert('Extension installed!');
+          alert('Installed successfully!');
         },
         function(err) {
           alert('Install failed: ' + err);
